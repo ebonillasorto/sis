@@ -61,5 +61,11 @@
         mysqli_close($conn);
     }
 
+    function createTable(){
+        $sql = "CREATE TABLE Shelves ( shelfNumber INT NOT NULL, itemName VARCHAR(64) NOT NULL, itemQuantity INT NOT NULL )";
+
+        exeSQL($conn, $sql);
+    }
+
 
 ?>
