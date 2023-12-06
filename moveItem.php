@@ -22,7 +22,7 @@
         </fieldset>
 
         <br>
-        <input type="submit" name="submit" value="Move">
+        <input type="submit" name="submit" value="Remove">
         <input type="reset" value="Reset">
     </form>
 </body>
