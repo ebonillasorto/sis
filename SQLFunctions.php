@@ -63,7 +63,12 @@
 
     function createTable(){
         $conn = connectDB();
-        $sql = "CREATE TABLE Shelves ( shelfNumber INT NOT NULL, itemName VARCHAR(64) NOT NULL, itemQuantity INT NOT NULL )";
+        $sql = "CREATE TABLE Shelves (
+            itemID INT AUTO_INCREMENT PRIMARY KEY,
+            shelfNumber INT NOT NULL,
+            itemName VARCHAR(64) NOT NULL,
+            itemQuantity INT NOT NULL
+        )";        
 
         exeSQL($conn, $sql);
     }
